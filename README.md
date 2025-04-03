@@ -1,16 +1,45 @@
-This project focuses on classifying chest X-ray images into two main categories: healthy and pneumonia cases. Pneumonia cases are further divided into two subcategories: bacterial pneumonia and viral pneumonia.
+# 🏥 Chest X-Ray Classification with Deep Learning  
 
-The dataset used for training is sourced from Kaggle, comprising 5863 chest X-ray images categorized into the aforementioned groups.
+## 📌 Overview  
+This project focuses on classifying chest X-ray images into different health conditions using deep learning.  
+The model categorizes images into:  
+✅ **Healthy**  
+❌ **Pneumonia** (further classified as **bacterial** or **viral**)  
 
-Project Tasks:
+The dataset, sourced from [Kaggle](https://www.kaggle.com/), contains **5,863 chest X-ray images** labeled accordingly.  
 
-Classification with Deep Learning: Implement a neural network to classify images into healthy and diseased categories. Additionally, implement a network with three outputs to classify into healthy, viral pneumonia, and bacterial pneumonia categories.
+---
 
-Image Classification with Embedding and KNN: Showcase how a new image can be classified using the embedding vector generated from the classification network and KNN (K-Nearest Neighbors). Visualize the different classes using t-SNE.
+## 🚀 Project Components  
 
-Transfer Learning with Imbalanced Training Data: Address the problem of imbalanced training data by changing the training and validation sets. Specifically, use a smaller training set to train the model and the original validation set for testing.
+### 🔹 1. Deep Learning Classification  
+- Implemented a **neural network** to classify chest X-ray images as either **healthy** or **diseased**.  
+- Developed a second model with **three output categories**: healthy, bacterial pneumonia, and viral pneumonia.  
 
-Anomaly Detection for Healthy Cases: Given a dataset comprising only "healthy" images, implement anomaly detection techniques to identify "unhealthy" cases.
+### 🔹 2. Image Embeddings & KNN Classification  
+- Generated **embedding vectors** from the classification model.  
+- Utilized **K-Nearest Neighbors (KNN)** to classify new images based on their embeddings.  
+- Visualized the distribution of different classes using **t-SNE**.  
 
+### 🔹 3. Transfer Learning with Imbalanced Data  
+- Addressed **imbalanced training data** by modifying the training and validation sets.  
+- Trained the model on a **smaller dataset** while testing on the full validation set to evaluate generalization.  
 
-To understand how to run the project please refer to the readme_EN or the readme_HE files.
+### 🔹 4. Anomaly Detection for Unhealthy Cases  
+- Implemented **anomaly detection** using only "healthy" images as training data.  
+- Detected "unhealthy" cases as outliers based on learned representations.  
+
+---
+
+## 🛠 Getting Started  
+For setup instructions and execution guidelines, refer to:  
+- 📄 [**README (English)**](./readme_EN.md)  
+- 📄 [**README (Hebrew)**](./readme_HE.md)  
+
+---
+
+📌 **Contributors**: [Your Name]  
+📌 **License**: MIT (if applicable)  
+📌 **Dataset**: [Kaggle Dataset](https://www.kaggle.com/)  
+
+Feel free to contribute or raise issues! 🚀  
